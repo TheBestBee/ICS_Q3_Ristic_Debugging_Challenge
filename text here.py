@@ -81,7 +81,7 @@ def chungus()
     elif messagebox.askyesno('Menu', 'Would you like a soft drink?'):
         print(menu_options[7]['name'], menu_options[7]['price'])
         order.append(menu_options[7]['name'])
-    elif messagebox.askyesno('Menu', 'Would you like a classic value basket?'):
+    elif messagebox.askesno('Menu', 'Would you like a classic value basket?'):
         print(menu_options[8]['name'], menu_options[8]['price'])
         order.append(menu_options[8]['name'])
     elif messagebox.askyesno('Menu', 'Would you like a premium value basket?'):
@@ -158,10 +158,10 @@ b3.grid(row=4, column=0, sticky=(N, S, E, W))
 #labels and other shit
 giglamesh=StringVar()
 giglamesh.set("Your Options for Tonight's Menu")
-Label(win, textvariable=giglamesh).grid(row=0, column=0)
+Label(mf, textvariable=giglamesh).grid(row=0, column=0)
 
 #peechure
 hell=PhotoImage(file='logo.png')
-Label(mf, image=hell).grid(row=1, column=0)
+Label(win, image=hell).grid(row=1, column=0)
 
 root.mainloop()
