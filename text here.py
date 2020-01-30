@@ -1,7 +1,7 @@
 import tkinter
 from tkinter import *
 from tkinter import messagebox
-food=False
+food=True
 order=[]
 
 #menu time
@@ -55,7 +55,7 @@ def chungus()
             print(custard_add_ons[1]['name'], custard_add_ons[1]['price'])
             order.append(custard_add_ons[1]['name'])
         elif messagebox.askyesno('Add-Ons', 'Would you like Hershey bars?'):
-            print(custard_add_ons[2]['name'], custard_add_ons[2]['price'])
+            print(custard_add_ons[2 'name'], custard_add_ons[2]['price'])
             order.append(custard_add_ons[2]['name'])
         elif messagebox.askyesno('Add-Ons', 'Would you like peanut butter?'):
             print(custard_add_ons[3]['name'], custard_add_ons[3]['price'])
@@ -81,7 +81,7 @@ def chungus()
     elif messagebox.askyesno('Menu', 'Would you like a soft drink?'):
         print(menu_options[7]['name'], menu_options[7]['price'])
         order.append(menu_options[7]['name'])
-    elif messagebox.askesno('Menu', 'Would you like a classic value basket?'):
+    elif messagebox.askyesno('Menu', 'Would you like a classic value basket?'):
         print(menu_options[8]['name'], menu_options[8]['price'])
         order.append(menu_options[8]['name'])
     elif messagebox.askyesno('Menu', 'Would you like a premium value basket?'):
@@ -143,25 +143,29 @@ root.title("CULVER'S")
 
 #frame time for baby
 mf = Frame(root, height=300, width=400)
-mf.grid(row=0, column=0, sticky=(N, S, E, W))
+mf.grid(row=0, column=0, sticky=(N, S, E, W)
 win = Frame(root, height=200, width=400)
-win.grid(row=1, column=0, sticky=(N, S, E, W))
+win.grid(row=1, column=0, sticky=(N, S, E, W)
 
 #button madness
 b1 = Button(text="Options", command=chungus)
-b1.grid(row=2, column=0, sticky=(N, S, E, W))
+b1.grid(row=2, column=0, sticky=(N, S, E, W)
 b2 = Button(text="Print", command=final)
-b2.grid(row=3, column=0, sticky=(N, S, E, W))
+b2.grid(row=3, column=0, sticky=(N, S, E, W)
 b3 = Button(text="Quit", command=root.destroy)
-b3.grid(row=4, column=0, sticky=(N, S, E, W))
+b3.grid(row=4, column=0, sticky=(N, S, E, W)
 
 #labels and other shit
 giglamesh=StringVar()
 giglamesh.set("Your Options for Tonight's Menu")
-Label(mf, textvariable=giglamesh).grid(row=0, column=0)
+Label(win, textvariable=giglamesh).grid(row=0, column=0)
 
 #peechure
 hell=PhotoImage(file='logo.png')
-Label(win, image=hell).grid(row=1, column=0)
+Label(mf, image=hell).grid(row=1, column=0)
 
 root.mainloop()
+
+#when complete it should look like an order window
+#property of ella ristic
+#error count: 8
