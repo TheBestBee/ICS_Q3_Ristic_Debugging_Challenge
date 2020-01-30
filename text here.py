@@ -28,7 +28,7 @@ custard_add_ons={1: {'name':'Cheesecake Chunks', 'price':.99, 'desc':'Heart atta
                  4: {'name':'Brownie Bites', 'price':.99, 'desc':'Brownie delight, now in custard!'},
                  5: {'name':'Strawberry', 'price':.99, 'desc':'Your favorite berry, now in custard!'}}
 
-def chungus():
+def chungus()
     if messagebox.askyesno('Menu', 'Would you like a burger?'):
         order.append(menu_options[1]['name'])
         if messagebox.askyesno('Add-Ons', 'Would you like cheese?'):
@@ -89,7 +89,7 @@ def chungus():
         order.append(menu_options[9]['name'])
 
 
-def final():
+def final()
     input("How would you like to pay for this?\n> ")
     price=0
     for item in order:
@@ -158,10 +158,10 @@ b3.grid(row=4, column=0, sticky=(N, S, E, W))
 #labels and other shit
 giglamesh=StringVar()
 giglamesh.set("Your Options for Tonight's Menu")
-Label(mf, textvariable=giglamesh).grid(row=0, column=0)
+Label(win, textvariable=giglamesh).grid(row=0, column=0)
 
 #peechure
 hell=PhotoImage(file='logo.png')
-Label(win, image=hell).grid(row=1, column=0)
+Label(mf, image=hell).grid(row=1, column=0)
 
 root.mainloop()
